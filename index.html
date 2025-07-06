@@ -2,55 +2,111 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Xinai Lu - Data Scientist</title>
+  <title>Xinai Lu | Data Scientist</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
     body {
-      font-family: 'Helvetica Neue', sans-serif;
-      background: #f5f5f5;
-      color: #333;
       margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      display: flex;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    .sidebar {
+      width: 280px;
+      background-color: #1f1f1f;
+      color: white;
+      padding: 2rem 1.5rem;
+      height: 100vh;
+      box-sizing: border-box;
+      position: fixed;
+    }
+    .sidebar img {
+      width: 100%;
+      border-radius: 50%;
+      margin-bottom: 1.5rem;
+    }
+    .sidebar h1 {
+      font-size: 24px;
+      margin-bottom: 0.5rem;
+    }
+    .sidebar p {
+      font-size: 14px;
+      margin-bottom: 0.5rem;
+    }
+    .sidebar a {
+      color: #00bfff;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .main {
+      margin-left: 280px;
       padding: 2rem;
+      flex: 1;
     }
-    h1 {
-      font-size: 2.5rem;
-      color: #007acc;
+    .btn-download {
+      display: inline-block;
+      background-color: #007acc;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-bottom: 2rem;
+      font-weight: bold;
     }
-    .section {
-      margin-top: 2rem;
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
     }
-    a {
+    .card {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      flex: 1 1 300px;
+    }
+    .card a {
+      font-size: 16px;
+      font-weight: bold;
       color: #007acc;
       text-decoration: none;
+    }
+    .snake {
+      margin-top: 2rem;
     }
   </style>
 </head>
 <body>
-  <h1>👋 Hi, I'm Xinai Lu</h1>
-  <p>📊 Incoming Master's Student @ Columbia University (Statistics)</p>
-  <p>🌾 Undergraduate in Agricultural Economics + Data Science Minor</p>
-  <p>🧠 Interested in Causal Inference, Machine Learning, and Applied Econometrics</p>
-
-  <div class="section">
-    <h2>🛠 Skills</h2>
-    <ul>
-      <li>Python, R, SQL</li>
-      <li>Scikit-learn, XGBoost, EconML, CausalImpact</li>
-      <li>Data visualization, Econometrics</li>
-    </ul>
+  <div class="sidebar">
+    <img src="avatar.jpg" alt="Avatar" />
+    <h1>Xinai Lu</h1>
+    <p>📊 Incoming MA in Statistics @ Columbia</p>
+    <p>🌾 Background in Agri Econ + Data Science</p>
+    <p>📧 <a href="mailto:yourname@example.com">yourname@example.com</a></p>
+    <p>🔗 <a href="https://www.linkedin.com/in/your-link">LinkedIn</a></p>
+    <p>💻 <a href="https://github.com/xinailu">GitHub</a></p>
   </div>
 
-  <div class="section">
-    <h2>📂 Projects</h2>
-    <ul>
-      <li><a href="https://github.com/xinailu/causal-impact-analysis">Causal Impact Analysis on Agricultural Yield</a></li>
-      <li><a href="https://github.com/xinailu/ucdm">UCDM: Unsupervised Class Distribution Mismatch (ICML 2025)</a></li>
-    </ul>
-  </div>
+  <div class="main">
+    <a class="btn-download" href="resume.pdf" download>📄 下载简历（PDF）</a>
 
-  <div class="section">
-    <h2>📫 Contact</h2>
-    <p>Email: yourname@example.com | <a href="https://www.linkedin.com/in/yourlinkedin">LinkedIn</a></p>
+    <h2>💼 项目展示</h2>
+    <div class="projects">
+      <div class="card">
+        <a href="https://github.com/xinailu/ucdm">UCDM (ICML 2025)</a>
+        <p>基于扩散模型的类分布不匹配处理方法，解决开放世界识别问题。</p>
+      </div>
+      <div class="card">
+        <a href="https://github.com/xinailu/causal-impact-analysis">Causal Impact on Yield</a>
+        <p>基于 CausalImpact 分析数字金融与干旱对农业产量的因果关系。</p>
+      </div>
+    </div>
+
+    <div class="snake">
+      <h2>🐍 GitHub 活跃图</h2>
+      <img src="https://github.com/xinailu/xinailu/blob/output/github-snake.svg" alt="GitHub Snake Animation" />
+    </div>
   </div>
 </body>
 </html>
