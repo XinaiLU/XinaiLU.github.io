@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Xinai Elizabeth Lu</title>
-  <style>
+    <style>
     body {
       margin: 0;
       font-family: 'Georgia', serif;
@@ -22,6 +22,10 @@
       box-sizing: border-box;
       width: 280px;
       flex-shrink: 0;
+      height: 100vh;
+      position: sticky;
+      top: 0;
+      align-self: flex-start;
     }
     .sidebar img {
       width: 100%;
@@ -65,7 +69,7 @@
       gap: 1rem;
     }
     .card, .award-card {
-      background: rgb(220, 215, 215);
+      background: white;
       padding: 0.5rem 1rem;
       margin: 0;
       border-radius: 8px;
@@ -82,7 +86,7 @@
       margin-bottom: 0.5rem;
     }
     .award-card p {
-      margin: 0rem 0;
+      margin: 0.25rem 0;
     }
 
     /* Responsive Layout */
@@ -93,6 +97,7 @@
       .sidebar {
         width: 100%;
         position: relative;
+        height: auto;
       }
       .main {
         padding: 1rem;
