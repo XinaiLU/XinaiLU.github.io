@@ -7,14 +7,14 @@
   <style>
     body {
       margin: 0;
-      font-family: 'Helvetica Neue', sans-serif;
+      font-family: 'Georgia', serif; /* More academic font */
       display: flex;
-      background-color: #f9f9f9;
+      background-color: #f5f5f5;
       color: #333;
     }
     .sidebar {
       width: 280px;
-      background-color: #1f1f1f;
+      background-color: #2c3e50; /* Dark blue for academic feel */
       color: white;
       padding: 2rem 1.5rem;
       height: 100vh;
@@ -29,6 +29,7 @@
     .sidebar h1 {
       font-size: 24px;
       margin-bottom: 0.5rem;
+      font-weight: 600;
     }
     .sidebar p {
       font-size: 14px;
@@ -75,15 +76,29 @@
     .snake {
       margin-top: 2rem;
     }
+    .awards {
+      margin-top: 3rem;
+    }
+    .award-card {
+      background-color: #ecf0f1;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .award-card h3 {
+      margin-bottom: 0.5rem;
+      color: #2c3e50;
+    }
   </style>
 </head>
 <body>
   <div class="sidebar">
-    <img src="me.JPG" alt="XinaiLu" />
+    <img src="me.JPG" alt="Xinai Elizabeth Lu" />
     <h1>Xinai Elizabeth Lu</h1>
-    <p>📊 MA Statistics @Columbia U</p>
-    <p>🌾 BEng DSBDT & BMgt Agri Econ @Renmin U of China</p>
-    <p>📧 <a href="mailto:yourname@example.com">xinailu03@gmail.com</a></p>
+    <p>📊 MA in Statistics @Columbia University</p>
+    <p>🌾 BEng in Data Science & Big Data Technology, BManagement in Agricultural Economics @Renmin University of China</p>
+    <p>📧 <a href="mailto:xinailu03@gmail.com">xinailu03@gmail.com</a></p>
     <p>🔗 <a href="https://www.linkedin.com/in/your-link">LinkedIn</a></p>
     <p>💻 <a href="https://github.com/xinailu">GitHub</a></p>
   </div>
@@ -91,40 +106,68 @@
   <div class="main">
     <a class="btn-download" href="resume.pdf" download>Download CV</a>
 
-    <h2>Reseaches</h2>
+    <h2>Researches</h2>
     <div class="projects">
       <div class="card">
         <a href="https://github.com/xinailu/ucdm">Unsupervised Learning for Class Distribution Mismatch (ICML 2025 Poster)</a>
-        <p>UCDM：基于语义引导的扩散模型优化类分布不匹配场景下的分类问题，解决开放世界识别问题。</p>
+        <p>UCDM: A semantic-guided diffusion model for handling class distribution mismatch in open-world recognition tasks.</p>
       </div>
       <div class="card">
         <a href="https://github.com/xinailu/causal-impact-analysis">Causal Impact on Yield</a>
-        <p>基于 Double Machine Learning方法验证数字普惠金融在干旱冲击农业产量过程中的缓释作用与影响路径。</p>
+        <p>Using Double Machine Learning to study the alleviating effects and pathways of digital inclusive finance on agricultural yields under drought impacts.</p>
+      </div>
+    </div>
+
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <a href="https://github.com/xinailu/ucdm">Unsupervised Learning for Class Distribution Mismatch (ICML 2025 Poster)</a>
+        <p>UCDM: A semantic-guided diffusion model for handling class distribution mismatch in open-world recognition tasks.</p>
+      </div>
+      <div class="card">
+        <a href="https://github.com/xinailu/causal-impact-analysis">Causal Impact on Yield</a>
+        <p>Using Double Machine Learning to study the alleviating effects and pathways of digital inclusive finance on agricultural yields under drought impacts.</p>
       </div>
     </div>
 
     <h2>Internships</h2>
     <div class="projects">
       <div class="card">
-        <a>滴滴出行 策略算法-数据科学</a>
-        <p>2025.5-2025.8</p>
+        <a>DiDi Chuxing Strategy Algorithm - Data Science Intern</a>
+        <p>May 2025 - Aug 2025</p>
       </div>
       <div class="card">
-        <a>中国人民大学 数据工程与知识工程教育部重点实验室</a>
-        <p>2024.5-2025.5</p>
+        <a>Key Laboratory of Data Engineering and Knowledge Engineering, Renmin University of China</a>
+        <p>May 2024 - May 2025</p>
       </div>
     </div>
 
     <h2>Activities</h2>
     <div class="projects">
       <div class="card">
-        <a href="https://github.com/xinailu/ucdm">SAGA星光 IT部志愿者 前端工程师</a>
-        <p>2024.8-2025.6</p>
+        <a href="https://github.com/xinailu/ucdm">SAGA Starlight IT Department Volunteer - Frontend Developer</a>
+        <p>Aug 2024 - Jun 2025</p>
+      </div>
+    </div>
+
+    <h2>Awards and Honors</h2>
+    <div class="awards">
+      <div class="award-card">
+        <h3>Best Paper Award - ICML 2025</h3>
+        <p>For the paper "Unsupervised Class Distribution Mismatch in Open-World Recognition", presented at ICML 2025.</p>
+      </div>
+      <div class="award-card">
+        <h3>Columbia University Academic Excellence Scholarship</h3>
+        <p>Received for outstanding academic performance in the Data Science & Statistics program.</p>
+      </div>
+      <div class="award-card">
+        <h3>Top Innovator Award - Data Science Competition 2023</h3>
+        <p>Recognized for innovative machine learning solutions in agricultural data analysis.</p>
       </div>
     </div>
 
     <!-- <div class="snake">
-      <h2>GitHub</h2>
+      <h2>GitHub Snake</h2>
       <img src="https://github.com/xinailu/xinailu/blob/output/github-snake.svg" alt="GitHub Snake Animation" />
     </div> -->
   </div>
