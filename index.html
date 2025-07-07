@@ -2,30 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Xinai Elizabeth Lu</title>
-    <style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
     body {
       margin: 0;
-      font-family: 'Georgia', serif;
+      font-family: 'Georgia', serif; /* More academic font */
+      display: flex;
       background-color: #f5f5f5;
       color: #333;
     }
-    .container {
-      display: flex;
-      flex-direction: row;
-    }
     .sidebar {
-      background-color: #2c3e50;
+      width: 280px;
+      background-color: #2c3e50; /* Dark blue for academic feel */
       color: white;
       padding: 2rem 1.5rem;
-      box-sizing: border-box;
-      width: 280px;
-      flex-shrink: 0;
       height: 100vh;
-      position: sticky;
-      top: 0;
-      align-self: flex-start;
+      box-sizing: border-box;
+      position: fixed;
     }
     .sidebar img {
       width: 100%;
@@ -47,12 +41,14 @@
       font-size: 14px;
     }
     .main {
-      flex: 1;
+      margin-left: 280px;
       padding: 2rem;
+      flex: 1;
     }
     .main h2 {
       margin-bottom: 1rem;
     }
+
     .btn-download {
       display: inline-block;
       background-color: #007acc;
@@ -63,63 +59,73 @@
       margin-bottom: 2rem;
       font-weight: bold;
     }
-    .projects, .awards {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
+    .projects {
+        display: flex;
+        flex-direction: column; /* 垂直排列 */
+        gap: 1rem;
+     }
+    .card {
+    background: white;
+    padding: 0.5rem 1rem; /* 上下 0.5rem，左右保留 1rem */
+    margin: 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    width: 100%;
+    max-width: 800px;
+    box-sizing: border-box;
     }
-    .card, .award-card {
-      background: rgb(207, 207, 207);
-      padding: 0.5rem 1rem;
-      margin: 0;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-      width: 100%;
-      max-width: 800px;
-      box-sizing: border-box;
-    }
-    .card a, .award-card h3 {
+
+    .card a {
       font-size: 16px;
       font-weight: bold;
       color: #007acc;
       text-decoration: none;
-      margin-bottom: 0.5rem;
     }
-    .award-card p {
-      margin: 0rem 0;
+    .snake {
+      margin-top: 2rem;
     }
 
-    /* Responsive Layout */
-    @media (max-width: 768px) {
-      .container {
-        flex-direction: column;
-      }
-      .sidebar {
-        width: 100%;
-        position: relative;
-        height: auto;
-      }
-      .main {
-        padding: 1rem;
-      }
+    .awards {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;              /* 控制上下间距紧凑 */
     }
+
+    .award-card {
+    background-color: #ecf0f1;
+    padding: 0.5rem 1rem; /* 上下 0.5rem，左右保留 1rem */
+    margin: 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    width: 100%;
+    max-width: 800px;
+    box-sizing: border-box;
+    }
+
+    .award-card h3 {
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+    font-size: 16px; /* 默认是更大的字体，改小一点 */
+    }
+
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="sidebar">
-      <img src="me2.png" alt="Xinai Lu" />
-      <h1>Elizabeth Xinai Lu</h1>
-      <p>📊 MA in Statistics @Columbia University</p>
-      <p>🌾 BEng in DSBDT & BMgt in AgriEcon @Renmin University of China</p>
-      <p>📧 <a href="mailto:xinailu03@gmail.com">xinailu03@gmail.com</a></p>
-      <p>💻 <a href="https://github.com/xinailu">GitHub</a></p>
-      <p>📖 <a href="https://scholar.google.com/citations?user=Xu2BlIQAAAAJ" target="_blank">Google Scholar</a></p>
-      <p>🐶 <a href="https://www.xiaohongshu.com/user/profile/63eeebe9000000000f0112f9" target="_blank">Rednote</a></p>
-    </div>
-    <div class="main">
-      <!-- Content area: you can paste your Researches, Projects, Internships, etc. here -->
-      <h2>Researches</h2>
+  <div class="sidebar">
+    <img src="me2.png" alt="Xinai Lu" />
+    <h1>Elizabeth Xinai Lu</h1>
+    <p>📊 MA in Statistics @Columbia University</p>
+    <p>🌾 BEng in DSBDT & BMgt in AgriEcon @Renmin University of China</p>
+    <p>📧 <a href="mailto:xinailu03@gmail.com">xinailu03@gmail.com</a></p>
+    <!-- <p>🔗 <a href="https://www.linkedin.com/in/your-link">LinkedIn</a></p> -->
+    <p>💻 <a href="https://github.com/xinailu">GitHub</a></p>
+    <p>📖 <a href="https://scholar.google.com/citations?user=Xu2BlIQAAAAJ&hl=zh-CN&oi=sra" target="_blank">Google Scholar</a></p>
+    <p>🐶 <a href="https://www.xiaohongshu.com/user/profile/63eeebe9000000000f0112f9?xsec_token=ABVa8qSds0zbgrBsf87PZ-sepDA-kZQ5vfIPX1Op2_8IY%3D&xsec_source=pc_search" target="_blank">Rednote</a></p>
+  </div>
+
+  <div class="main">
+    <h2>Researches</h2>
     <div class="projects">
       <div class="card">
         <a href="https://arxiv.org/abs/2505.06948#:~:text=To%20address%20this%2C%20we%20propose%20Unsupervised%20Learning%20for,positive-negative%20pairs%20from%20unlabeled%20data%20for%20classifier%20training.">Unsupervised Learning for Class Distribution Mismatch</a>
@@ -201,7 +207,6 @@
       <h2>GitHub Snake</h2>
       <img src="https://github.com/xinailu/xinailu/blob/output/github-snake.svg" alt="GitHub Snake Animation" />
     </div> -->
-    </div>
   </div>
 </body>
 </html>
